@@ -1,0 +1,78 @@
+{
+	"easycom": {
+		"^tn-(.*)": "@/tuniao-ui/components/tn-$1/tn-$1.vue"
+	},
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "ChatGPT专业版",
+				"enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#26B3A0",
+				"navigationBarTextStyle": "white"
+			}
+		}, {
+			"path": "pages/chat/index",
+			"style": {
+				"navigationBarTitleText": "对话",
+				"enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#26B3A0",
+				"navigationBarTextStyle": "white"
+			}
+		}, {
+			"path": "pages/ask/index",
+			"style": {
+				"navigationBarTitleText": "关于",
+				"enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#26B3A0",
+				"navigationBarTextStyle": "white"
+			}
+		}, {
+			"path": "pages/answers/index",
+			"style": {
+				"navigationBarTitleText": "答案库",
+				"enablePullDownRefresh": false
+			}
+	
+		}, {
+			"path": "pages/help/index",
+			"style": {
+				"navigationBarTitleText": "帮助中心",
+				"enablePullDownRefresh": false
+			}
+	
+		}, {
+			"path": "pages/questionlog/index",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+	
+		}
+	    ,{
+	        "path" : "pages/credits/index",
+	        "style" :                                                                                    
+	        {
+	            "navigationBarTitleText": "",
+	            "enablePullDownRefresh": false
+	        }
+	        
+	    }
+		,{
+		    "path" : "pages/invite/index",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "",
+		        "enablePullDownRefresh": false
+		    }
+		    
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"uniIdRouter": {}
+}
