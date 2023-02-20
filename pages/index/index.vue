@@ -10,21 +10,20 @@
 				</view>
 			</view>
 		</view>
-		
-		<view class="btn-view-ans">
+
+		<view class="btn-view-ans" @click="jumpQuestion">
 			给我答案
 		</view>
-		
+
 		<view>
-			<view class="btn-view-ans">
+			<view class="btn-view-ans" @click="jumpAnswers">
 				答案库
 			</view>
-			<view class="btn-view-ans">
+			<view class="btn-view-ans" @click="jumpHelp">
 				使用教程
 			</view>
 		</view>
-		
-		
+
 		<text>加入微信群</text>
 	</view>
 </template>
@@ -47,8 +46,25 @@
 		onReachBottom() {},
 		methods: {
 			jumpCredits() {
-				
-			}
+				uni.navigateTo({
+					url: '/pages/credits/index'
+				})
+			},
+			jumpAnswers() {
+				uni.navigateTo({
+					url: '/pages/answers/index'
+				})
+			},
+			jumpQuestion() {
+				uni.navigateTo({
+					url: '/pages/question/index'
+				})
+			},
+			jumpHelp() {
+				uni.navigateTo({
+					url: '/pages/help/index'
+				})
+			},
 		}
 	}
 </script>
